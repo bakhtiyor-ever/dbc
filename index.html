@@ -9,14 +9,14 @@
 </head>
 <body>
     <button class="scrollToTop" id="toTop"></button>
+
+
     <nav>
         <div class="container">
             <div class="navbar">
-                <a class="serve__svg" href="#!"><img src="./img/dbc.svg" style="width: 100px;" alt="logo"></a>
+                <a class="site__logo" href="#!"><img src="./img/dbc.svg" style="width: 100px;" alt="logo"></a>
                 
-                <ul class="nav-list"
-                <b class="serve__heading"></b>
-                <p class="serve__heading--content"></p>
+                <ul class="nav-list">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
                             Bosh sahifa
@@ -58,7 +58,7 @@
     
     <header class="header">
         <div class="container">
-            <div class="header-head">
+            <div class="header-head" id="header">
                 <div class="header-content__wrapper">
                     <h1 class="h-c__title typed-out">
                         Dilmuradovs Building Company
@@ -89,7 +89,7 @@
     
     <section class="intro">
         <div class="container">
-            <div class="intro-body">
+            <div class="intro-body" id="aboutus">
                 <div class="intro-galery__wrapper">
                     <div class="i-g__img i-g__1">
                         
@@ -139,7 +139,7 @@
     
     <section class="serve">
         <div class="container">
-            <div class="serve-body">
+            <div class="serve-body" id="service">
                 <b class="serve__caption"> Bizning xizmatlar </b>
                 <p class="serve__caption--desc">Bizning xizmat yangi binolar qurish va eski binolarni ta'mirlashni o'z ichiga oladi</p>
                 
@@ -202,7 +202,7 @@
     
     <section class="works">
         <div class="container">
-            <div class="works-body">
+            <div class="works-body" id="gallery">
                 <b class="work__title">Bizning ishlar</b>
                 <p class="work__title--desc">Bu erda biz ba'zi binolar, uylar va ichki dizaynlarni qurishda eng yaxshi natijalarga erishamiz</p>
                 <ul class="works__list">
@@ -234,8 +234,86 @@
             </div>
         </div>
     </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners-body">
+                <b class="partners__name">Bizning hamkorlarimiz</b>
+                <ul class="partners__list">
+                    <li class="partners__item">
+                        <img src="./img/knauf.svg" alt="knauf">
+                    </li>
+                    <li class="partners__item">
+                        <img src="./img/stroydom-pro-logo.png" alt="stroy dom">
+                    </li>
+                    <li class="partners__item">
+                        <img src="./img/Akfa_logo.png" alt="akfa">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
     
+    <section class="video">
+        <div class="container">
+            <div class="video-wrapper">
+                <b class="video__title">Bu bizning jamoalarimiz qanday ishlashini ko'rsatadigan video</b>
+                <video width="100%" height="320" controls>
+                    <source src="./video/ConstructionCompanyAdvertisementAfterEffectsTemplate.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
     
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-nav">
+                <div class="footer__us">
+                    <a class="footer__logo" href="#!"><img src="./img/dbc.svg" style="width: 100px;" alt="site logo"></a>
+                    <p class="footer__us--desc">Andijon viloyati, Bo'ston tumani, Kamolot ko'chasi 73-uy</p>
+                    <a href="#!" class="footer__us--link">Yoʻnalishlarni oling</a>
+                </div>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <b class="footer__item--name">Menu</b>
+                        <a class="footer__item--link" href="#header">Bosh sahifa</a>
+                        <a class="footer__item--link" href="#aboutus">Biz haqimizda</a>
+                        <a class="footer__item--link" href="#gallery">Galareya</a>
+                        <a class="footer__item--link" href="#service">Xizmarlar</a>
+                    </li>
+                    <li class="footer__item">
+                        <b class="footer__item--name">Murojat uchun</b>
+                        <a class="footer__item--link" href="mailto: mrbakhtiyour@gmail.com">E-mail</a>
+                        <a class="footer__item--link" href="tel:+998900997005">Mobile</a>
+                        <a class="footer__item--link" href="tel:+998900997005">Whatsapp</a>
+                        <a class="footer__item--link" href="https://t.me/stevesmessage_robot">Telegram</a>
+                    </li>
+                    <li class="footer__item">
+                        <b class="footer__item--name">Karyera</b>
+                        <a class="footer__item--link" href="tel:+998900997005">Ish</a>
+                        <a class="footer__item--link" href="tel:+998900997005">Vaqtincha</a>
+                        <a class="footer__item--link" href="tel:+998900997005">Amaliyot</a>
+                        <a class="footer__item--link" href="tel:+998900997005">Xizmar</a>
+                    </li>
+                    <li class="footer__item">
+                        <b class="footer__item--name">Biznes</b>
+                        <a class="footer__item--link" href="#!">Hamkor</a>
+                        <a class="footer__item--link" href="tel:+998900997005">Kolaboratsiya</a>
+                        <a class="footer__item--link" href="tel:+998900997005">Sarmoya</a>
+                        <a class="footer__item--link" href="https://instagram.com/bakhtiyor_ever">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <section class="end">
+        <div class="container">
+            <div class="ending">
+                <p>&copy; 2022 Abduvohid, Baxtiyor</p>
+            </div>
+        </div>
+    </section>
     
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
