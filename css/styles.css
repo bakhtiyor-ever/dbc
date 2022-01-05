@@ -252,6 +252,10 @@ body {
   font-display: swap;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   padding: 0 15px;
   width: 100%;
@@ -897,10 +901,10 @@ header .header-head .header-slide__wrapper #slideshow .slide-3 {
   transition: all 0.3s linear;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 400px) {
   .serve .serve-body .service__list .service__item {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

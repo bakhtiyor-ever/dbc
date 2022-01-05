@@ -21,6 +21,10 @@ $rob: 'Roboto', sans-serif;
     @media (max-width: 1800px) { @content; }
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .container {
     @include for-tablet-landscape() {
         max-width: 100%;
@@ -534,9 +538,9 @@ header {
                 padding: 27px 40px 44px 40px; 
                 min-height: 250px;
                 transition: all 0.3s linear;
-                @media only screen and (max-width: 380px) {
-                    padding-left: 0;
-                    padding-right: 0;
+                @media only screen and (max-width: 400px) {
+                    padding-left: 20px;
+                    padding-right: 20px;
                 }
                 
                 .serve__svg {   
