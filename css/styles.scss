@@ -36,6 +36,25 @@ button:hover {
     margin-right: auto;
 }
 
+.scrollToTop{
+    width: 60px;
+    height: 60px;
+    box-shadow:rgba(5, 96, 136, 0.4);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    display:none;
+    border-radius: 10px;
+    background-color: #074966;
+    box-shadow: 0px 0px 80px 30px rgba(255, 255, 255, 0.1);
+    background-image: url('../img/top.svg');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
 nav {
     position: fixed;
     z-index: 19;
@@ -537,7 +556,10 @@ header {
             .service__item {
                 padding: 27px 40px 44px 40px; 
                 min-height: 250px;
-                transition: all 0.3s linear;
+                transition: all 0.2s linear;
+                background-image: url('../img/serev-item__back.jpg');
+                background-position-y: -400px;
+                background-repeat: no-repeat;
                 @media only screen and (max-width: 400px) {
                     padding-left: 20px;
                     padding-right: 20px;
@@ -549,7 +571,6 @@ header {
                     width: 51px;
                     height: 46px;
                     margin-bottom: 20px;
-                    transition: all 0.3s linear;
                     @media only screen and (max-width: 649px) {
                         margin-left: auto;
                         margin-right: auto;
@@ -560,7 +581,6 @@ header {
                     color: #434343;
                     font-size: 20px;
                     line-height: 170%;
-                    transition: all 0.3s linear;
                 }
                 
                 .serve__heading--content {
@@ -568,14 +588,15 @@ header {
                     max-width: 230px;
                     line-height: 170%;
                     color: #434343;
-                    transition: all 0.3s linear;
                 }
             }
             .service__item:nth-child(2), .service__item:nth-child(4) {
                 padding-bottom: 20px;
             }
             .service__item:hover {
-                background: linear-gradient(180deg, rgba(5, 96, 136, 0.8) 0%, rgba(2, 57, 87, 0.8) 100%), url(etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg);
+                cursor: pointer;
+                background-position-y: 100%;
+                background-size: cover;
                 .serve__svg, .serve__heading, .serve__heading--content {
                     color: white;
                 }
@@ -587,6 +608,123 @@ header {
                 display: block;
                 max-width: 100%;
                 text-align: center;
+            }
+        }
+    }
+}
+
+.benefits {
+    .ben__body {
+        padding-bottom: 240px;
+        .ben__caption {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: $blue;
+            margin-bottom: 16px;
+        }
+        .ben__caption--desc {
+            width: 348px;
+            color: #434343;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 32px;
+            @media only screen and (max-width: 380px) {
+                width: 100%;
+            }
+        }
+
+        .ben__list {
+            display: flex;
+            justify-content: space-between;
+            
+            @include for-tablet-landscape() {
+                flex-wrap: wrap;
+                .ben__item {
+                    width: 420px;
+                }
+            }
+            @media only screen and (max-width: 880px) {
+                justify-content: center;
+            }
+            .ben__item {
+                position: relative;
+                width: 400px;
+                min-height: 313px;
+                padding: 140px 20px 42px 20px;
+                background-image: url('../img/ben-i-1.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                @media only screen and (max-width: 1250px) {
+                    width: 380px;
+                }
+                @media only screen and (max-width: 1190px) {
+                    width: 360px;
+                }
+                @media only screen and (max-width: 1130px) {
+                    width: 340px;
+                }
+                @media only screen and (max-width: 1100px) {
+                    width: 320px;
+                }
+                @media only screen and (max-width: 1000px) {
+                    width: 300px;
+                }
+                @media only screen and (max-width: 940px) {
+                    width: 280px;
+                }
+                @include for-tablet-landscape() {
+                    width: 420px;
+                }
+                @media only screen and (max-width: 880px) {
+                    width: 450px;
+                    margin-bottom: 20px;
+                }
+                .ben__heading {
+                    color: white;
+                    display: block;
+                    text-align: center;
+                    font-size: 20px;
+                    margin-bottom: 16px;
+                }
+                .ben__heading--desc {
+                    color: white;
+                    max-width: 260px;
+                    text-align: center;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .ben__item:nth-child(2) {
+                background-image: url('../img/ben-i-2.jpg');
+            }
+            .ben__item:nth-child(3) {
+                background-image: url('../img/ben-i-3.jpg');
+                @include for-tablet-landscape() {
+                    margin-top: 20px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @media only screen and (max-width: 880px) {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+            .ben__item::after {
+                content: "";
+                position: absolute;
+                top: 53px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
+                width: 51.33px;
+                height: 51.33px;
+                background-image: url('../img/ticked.svg');
+                background-repeat: no-repeat;
+                background-position: center;
             }
         }
     }
