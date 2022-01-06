@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    
+    <div id="loading">
+        <img id="loading-image" src="path/to/ajax-loader.gif" alt="Loading..." />
+      </div>
 
     <button class="scrollToTop" id="toTop"></button>
 
@@ -149,6 +151,11 @@
         </div>
     </section>
     
+    <script>
+        $(window).load(function() {
+          $('#loading').hide();
+        });
+      </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/query.js"></script>
