@@ -12,3 +12,14 @@ menuBtn.addEventListener("click", () => {
         menuOpen = false;
     }
 })
+
+const galeryLinkOpen = document.querySelector(".more-galery__link");
+
+galeryLinkOpen.addEventListener("click", function(e) {
+    e.preventDefault();
+    const hiddenList = document.querySelector(".hidden-gallery__list");
+    const hiddenList2 = document.querySelector(".hidden-gallery__list-2");
+    hiddenList.classList.add("appear-list");
+    hiddenList2.classList.add("appear-list");
+    this.classList.add("none");
+})
