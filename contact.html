@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>DBC - contact</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <a class="site__logo" href="#!"><img src="./img/dbc.svg" style="width: 100px;" alt="logo"></a>
+                
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            Bosh sahifa
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            Biz haqimizda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Xizmatlar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Galareya
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Murojat uchun
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Yangiliklar
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="header con-header">
+        <div class="container">
+            <div class="about-site c-h__wrapper" id="header">
+                <h1 class="a-s__title contact-title">
+                    Hamkorlik yoki qurilish qilish kerakmi? Unda aloqaga chiqing!
+                </h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="con-img__wrapper"></div>
+                <form class="contact-form" action="https://echo.htmlacademy.ru" method="post" id="myform">
+                    <label for="message">
+                        <h3 class="con__title">Marhamat, murojatingizni yo'llang!</h3>
+                    </label>
+                    <br>
+                    <input class="name-input" type="text" placeholder="Ismingiz/kompaniya nomi" name="name" required>
+                    <input class="ct-el-input" type = "text" placeholder = "Telefon/E-mail" name="phone/E-mail" required pattern = "^([a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3})|(\d{3}-\d{3}-\d{4})$">
+                    <textarea class="mg-input" name="message" form="myform">Xabar yozing...</textarea>
+                    <button class="con-form__btn">Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/query.js"></script>
+</body>
+</html>

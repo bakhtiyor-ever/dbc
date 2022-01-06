@@ -1788,4 +1788,46 @@ footer .footer-nav .footer__list .footer__item .footer__item--link:hover {
     width: 100%;
   }
 }
+
+.con-header .contact-title {
+  max-width: 1022px;
+}
+
+.contact .contact-wrapper {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  background-color: #F5F5F5;
+}
+
+.contact .contact-wrapper .con-img__wrapper {
+  width: 450px;
+  height: 411px;
+  background-image: url("../img/contact.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 39px;
+}
+
+.contact .contact-wrapper .contact-form .con__title {
+  font-size: 24px;
+  line-height: 170%;
+  color: #056088;
+}
+
+.contact .contact-wrapper .contact-form .name-input, .contact .contact-wrapper .contact-form .ct-el-input {
+  font-size: 17px;
+  padding: 12px 12px 12px 20px;
+  width: 340px;
+  height: 50px;
+  border: none;
+  display: inline-block;
+}
+
+.contact .contact-wrapper .contact-form .mg-input {
+  border: none;
+  margin-top: 16px;
+  display: block;
+  padding: 12px 12px 12px 20px;
+}
 /*# sourceMappingURL=styles.css.map */
