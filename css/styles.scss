@@ -186,7 +186,9 @@ nav {
     }
 }
 
-header {
+// main page of the site
+
+.header {
     background-image: url('../img/header-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -334,7 +336,6 @@ header {
     
     
 }
-
 
 .intro {
     .intro-body {
@@ -637,7 +638,7 @@ header {
                 width: 100%;
             }
         }
-
+        
         .ben__list {
             display: flex;
             justify-content: space-between;
@@ -774,7 +775,7 @@ header {
                 .left-wrapper-1, .right-wrapper-1 {
                     width: 200px;
                 }
-
+                
                 .left-wrapper-1 {
                     display: flex;
                     flex-direction: column;
@@ -866,7 +867,7 @@ header {
                 margin-right: auto;
             }
         }
-
+        
     }
 }
 
@@ -917,7 +918,7 @@ header {
             margin-bottom: 16px;
         }
         video {
-        background-color: $blue;
+            background-color: $blue;
             outline: none;
         }
     }
@@ -983,7 +984,7 @@ footer {
                 align-items: center;
                 margin-top: 25px;
             }
-
+            
             .footer__item {
                 .footer__item--name {
                     display: block;
@@ -1034,6 +1035,182 @@ footer {
         padding: 32px 0;
         p {
             text-align: center;
+        }
+    }
+}
+
+// about us page of the site
+
+.about-site {
+    padding-top: 200px;
+    padding-bottom: 120px;
+    .a-s__title {
+        max-width: 740px;
+        text-align: center;
+        font-size: 52px;
+        line-height: 78px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+        @include for-tablet-landscape() {
+            font-size: 44px;
+            line-height: 150%;
+        }
+        @include for-phone-only() {
+            font-size: 35px;
+        }
+        @media only screen and (max-width: 336px) {
+            font-size: 31px;
+        }
+    }
+}
+
+.story {
+    .story-wrapper {
+        @include flex(space-between, center);
+        padding-top: 100px;
+        padding-bottom: 125px;
+        @include for-tablet-landscape() {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 100px;
+        }
+        .story-image__wrapper {
+            position: relative;
+            width: 530px;
+            height: 481px;
+            background-image: url('../img/main-story.jpg');
+            background-size: cover;
+            background-position: center;
+            @media only screen and (max-width: 1180px) {
+                width: 480px;
+            }
+            @media only screen and (max-width: 990px) {
+                width: 410px;
+            }
+            @include for-tablet-landscape() {
+                width: 530px;
+                margin-bottom: 80px;
+            }
+            @media only screen and (max-width: 531px) {
+                width: 100%;
+            }
+            
+            .positioned-story__image {
+                position: absolute;
+                bottom: -49px;
+                right: -110px;
+                width: 433px;
+                height: 221px;
+                background-image: url('../img/story-positioned.jpg');
+                background-size: cover;
+                background-position: center;
+                @media only screen and (max-width: 1180px) {
+                    right: -60px;
+                }
+                @media only screen and (max-width: 990px) {
+                    right: -30px;
+                }
+                @include for-tablet-landscape() {
+                    bottom: -49px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                @media only screen and (max-width: 433px) {
+                    width: 100%;
+                }
+            }
+        }
+        .story-content__wrapper {
+            width: 510px;
+            @media only screen and (max-width: 1080px) {
+                width: 420px;
+            }
+            @include for-tablet-landscape() {
+                width: 600px;
+            }
+            @media only screen and (max-width: 601px) {
+                width: 500px;
+            }
+            @media only screen and (max-width: 510px) {
+                width: 100%;
+            }
+            .s-c__title {
+                font-size: 24px;
+                line-height: 170%;
+                color: $blue;
+                margin-bottom: 16px;
+                @include for-tablet-landscape() {
+                    text-align: center;
+                }
+            }
+            .s-c__title--desc {
+                font-size: 16px;
+                line-height: 170%;
+                color: #434343;
+                @include for-tablet-landscape() {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+.mhome {
+    background-image: url('../img/work-bg.jpg');
+    .mhome-wrapper {
+        @include flex(space-between, center);
+        @include for-tablet-landscape() {
+            flex-direction: column-reverse;
+        }
+        padding: 20px 0;
+        .mhome-content__wrapper {
+            max-width: 510px;
+            @media only screen and (max-width: 1080px) {
+                max-width: 411px;
+            }
+            @include for-tablet-landscape() {
+                max-width: 500px;
+            }
+            .mh-c__title {
+                font-size: 24px;
+                line-height: 170%;
+                color: white;
+                .italic-mh__name {
+                    font-size: 34px;
+                }
+                @include for-tablet-landscape() {
+                    text-align: center;
+                }
+            }
+            .mh-c__title--desc {
+                font-size: 16px;
+                line-height: 170%;
+                color: white;
+                font-style: normal;
+                font-weight: normal;
+                @include for-tablet-landscape() {
+                    text-align: center;
+                }
+            }
+            
+        }
+        .mhome-image__wrapper {
+            width: 611px;
+            height: 388px;
+            background-image: url('../img/about-home.jpg');
+            background-size: cover;
+            background-position: center;
+            @media only screen and (max-width: 1180px) {
+                width: 511px;
+            }
+            @media only screen and (max-width: 980px) {
+                width: 450px;
+            }
+            @media only screen and (max-width: 500px) {
+                width: 100%;
+            }
         }
     }
 }
