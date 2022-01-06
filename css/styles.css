@@ -987,6 +987,10 @@ nav .navbar .menu-btn.open .menu-btn__burger::after {
   }
 }
 
+.serve .main-serve__body {
+  padding-top: 100px;
+}
+
 .benefits .ben__body {
   padding-bottom: 40px;
 }
@@ -1802,6 +1806,7 @@ footer .footer-nav .footer__list .footer__item .footer__item--link:hover {
 @media (max-width: 900px) {
   .contact .contact-wrapper {
     flex-direction: column;
+    margin-top: 50px;
     padding: 40px 0;
   }
 }
@@ -1946,6 +1951,136 @@ footer .footer-nav .footer__list .footer__item .footer__item--link:hover {
   .via .via-wrapper .via__list .via__item:not(:last-child) {
     margin-right: 0;
     margin-bottom: 32px;
+  }
+}
+
+.deb .debup {
+  background-image: url("../img/mainserveicebg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+  .deb .debup {
+    flex-direction: column;
+    padding-right: 0;
+  }
+}
+
+.deb .debup .debup-img__wrapper img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .deb .debup .debup-img__wrapper {
+    width: 550px;
+  }
+}
+
+@media (max-width: 900px) {
+  .deb .debup .debup-img__wrapper {
+    width: 100%;
+  }
+}
+
+.deb .debup .debup__wrapper {
+  max-width: 517px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .deb .debup .debup__wrapper {
+    padding: 20px 0 20px 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .deb .debup .debup__wrapper {
+    padding: 20px 15px 50px 15px;
+  }
+}
+
+.deb .debup .debup__wrapper .debup__title {
+  display: block;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+  .deb .debup .debup__wrapper .debup__title {
+    text-align: center;
+  }
+}
+
+.deb .debup .debup__wrapper .debup__title--desc {
+  line-height: 170%;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .deb .debup .debup__wrapper .debup__title--desc {
+    text-align: center;
+  }
+}
+
+.deb .debdown {
+  padding-left: 40px;
+  background-image: url("../img/mainserveicebg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 900px) {
+  .deb .debdown {
+    flex-direction: column-reverse;
+    padding-left: 0;
+  }
+}
+
+.deb .debdown .debdown__wrapper {
+  max-width: 517px;
+}
+
+@media (max-width: 900px) {
+  .deb .debdown .debdown__wrapper {
+    padding: 20px 15px 50px 15px;
+  }
+}
+
+.deb .debdown .debdown__wrapper .debdown__title--desc {
+  line-height: 170%;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .deb .debdown .debdown__wrapper .debdown__title--desc {
+    text-align: center;
+  }
+}
+
+.deb .debdown .debdown-img__wrapper img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .deb .debdown .debdown-img__wrapper {
+    width: 550px;
+  }
+}
+
+@media (max-width: 900px) {
+  .deb .debdown .debdown-img__wrapper {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
