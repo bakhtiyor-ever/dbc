@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div id="loading">
-        <img id="loading-image" src="path/to/ajax-loader.gif" alt="Loading..." />
-      </div>
-
+    
+    
     <button class="scrollToTop" id="toTop"></button>
-
+    
+    
+    
     <nav>
         <div class="container">
             <div class="navbar">
@@ -210,7 +210,7 @@
                             <div class="left-bottom__img"></div>
                         </div>
                         <div class="right-wrapper-1">
-
+                            
                         </div>
                     </li>
                     <li class="works__item">
@@ -232,7 +232,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="partners">
         <div class="container">
             <div class="partners-body">
@@ -313,11 +313,30 @@
         </div>
     </section>
     
-    <script>
-        $(window).load(function() {
-          $('#loading').hide();
-        });
-      </script>
+    
+    
+    
+    
+    
+    
+    <div id="main-preloader" class="main-preloader semi-dark-background">
+        <div class="main-preloader-inner center">
+            <h1 class="preloader-percentage center">
+                <span class="preloader-percentage-text">0</span>
+                <span class="percentage">%</span>
+            </h1>
+            <div class="preloader-bar-outer">
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script src="js/sPreloader.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/query.js"></script>
